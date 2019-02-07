@@ -1,0 +1,79 @@
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <meta name="theme-color" content="#3367D6">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Import other AMP Extensions here -->
+    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <style amp-custom>
+        .hero .title {
+            color: whitesmoke;
+            font-family: Impact, fantasy;
+            position: absolute; 
+            top: 200px; 
+            left: 0; 
+            width: 100%; 
+        }
+
+        .hero {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+        } 
+
+        .hero amp-img {
+            margin-bottom: -20%;
+        }
+
+    #scroll {
+        height: 1000px;
+        background-color: green;
+    }
+        
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+ 
+    <link rel="canonical" href=".">
+    <title>Progressive Web AMP</title>
+  </head>
+  <body>
+    <div class="hero">
+        <amp-img layout="responsive"
+        height="2932" 
+        width="3909"
+        media="(min-width: 650px)"
+        src="images/lyghtning.jpg"
+        amp-fx="parallax" data-parallax-factor="1.2"></amp-img>
+        <amp-img layout="responsive"
+        height="2926" 
+        width="1879"
+        media="(max-width: 649px)"
+        src="images/lyghtning-mobile.jpg"
+        amp-fx="parallax" data-parallax-factor="1.2"></amp-img>
+        <amp-fit-text class="title" 
+            width="90"
+            height="90"
+            layout="responsive"
+            amp-fx="parallax" data-parallax-factor="1.5">
+            <span>Lyrical Lyghtning</span>
+        </amp-fit-text>
+    </div>  
+
+    <amp-install-serviceworker src="/sw.js"
+                               data-iframe-src="install-sw.html"
+                               layout="nodisplay">
+    </amp-install-serviceworker>
+
+ <a href="/second.html">google</a>
+
+ <div id="scroll"></div>
+  </body>
+</html>
