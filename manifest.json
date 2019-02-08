@@ -1,21 +1,21 @@
 {
-    "short_name": "PWAMP",
+    "short_name": "PW AMP",
     "name": "Progressive Web AMP",
     "icons": [
       {
-        "src": "https://placekitten.com/192/192",
+        "src": "./images/amplogo192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "https://placekitten.com/512/512",
+        "src": "./images/amplogo512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
     ],
     "start_url": "/index.html",
-    "background_color": "#3367D6",
+    "background_color": "#222325",
     "display": "standalone",
     "scope": "/",
-    "theme_color": "#3367D6"
+    "theme_color": "#222325"
   }
