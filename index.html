@@ -8,33 +8,18 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <!-- Import other AMP Extensions here -->
     <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
     <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
-    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-
     <style amp-custom>
 
         body {
             background-color: #222325;
             font-family: Arial, Helvetica, sans-serif
         }
-
-        .hero .title {
-            color: whitesmoke;
-            position: absolute; 
-            top: 40%; 
-            left: 0; 
-            width: 100%; 
-            font-size: 5em;
-            text-shadow: 2px 2px 4px #000000;
-        }
-
         h1 {
             position: relative;
             z-index: 1;
         }
-
         h2 {
             color: whitesmoke;
             font-size: 2em;
@@ -43,14 +28,6 @@
             font-size: 3em;
             text-shadow: 2px 2px 4px #000000;
         }
-
-       @media only screen and (max-width: 600px) {
-            .hero .title {
-                top: 30%; 
-                font-size: 2.5em;
-            }
-        }
-
         .hero {
             width: 100%;
             overflow: hidden;
@@ -62,7 +39,15 @@
         .hero amp-img {
             margin-bottom: -20%;
         }
-
+        .hero .title {
+            color: whitesmoke;
+            position: absolute; 
+            top: 40%; 
+            left: 0; 
+            width: 100%; 
+            font-size: 5em;
+            text-shadow: 2px 2px 4px #000000;
+        }
         a {
             color: whitesmoke;
             font-size: 1em;
@@ -74,10 +59,15 @@
             text-align: center;
 
         }
+        @media only screen and (max-width: 600px) {
+            .hero .title {
+                top: 30%; 
+                font-size: 2.5em;
+            }
+        }
 
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
- 
     <link rel="canonical" href=".">
     <title>Progressive Web AMP</title>
   </head>
@@ -100,35 +90,9 @@
         src="images/lyghtning-mobile.jpg"
         amp-fx="parallax" data-parallax-factor="1.2"></amp-img>
         <div class="title" amp-fx="parallax" data-parallax-factor="1.5"><h1>Lyrical Lyghtning</h1><br>
-            <a href="/lineup.html">See Full Lineup</a>
+            <a href="/lineup.html" rel=prefetch>See Full Lineup</a>
         </div>
-       
-    </div>  
-    <!-- <div class="center">
-            <amp-carousel width="1000"
-                height="900"
-                layout="intrinsic"
-                type="slides"
-                autoplay
-                delay="2000">
-                <amp-img src="/images/phone1.jpg"
-                width="400"
-                height="300"
-                layout="responsive"
-                alt="a sample image"></amp-img>
-                <amp-img src="/images/phone2.jpg"
-                width="400"
-                height="300"
-                layout="responsive"
-                alt="another sample image"></amp-img>
-                <amp-img src="/images/phone3.jpg"
-                width="400"
-                height="300"
-                layout="responsive"
-                alt="and another sample image"></amp-img>
-            </amp-carousel>
-            </div> -->
-
+    </div>
     <div class="center headline">
         <h2>Mobile Music Magic</h2>
         <br>
@@ -137,7 +101,5 @@
         width="70"
         src="images/amplogo.png"></amp-img></a>
     </div>
-
-
   </body>
 </html>
