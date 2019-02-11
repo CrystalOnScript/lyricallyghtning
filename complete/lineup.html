@@ -1,0 +1,151 @@
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <meta name="theme-color" content="#3367D6">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+    <style amp-custom>
+        body {
+            background-color: #222325;
+            font-family: Arial, Helvetica, sans-serif;
+            color: whitesmoke;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin: 10px;
+            font-size: 3em;
+            opacity: 1;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            margin: 10px;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .lineup  {
+            opacity: .9;
+            background-color: #222325;
+            width: 90%;
+        }
+        .hero {
+            width: 100%;
+            overflow: scroll;
+            position: relative;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        } 
+        .center {
+            display: grid;
+            align-content: center;
+        }
+        a {
+            color: whitesmoke;
+            font-size: 2em;
+            text-align: center;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="canonical" href=".">
+    <title>Progressive Web AMP</title>
+  </head>
+  <body>
+    <div class="hero">
+        <amp-img layout="fill"
+        height="2932" 
+        width="3909"
+        media="(min-width: 650px)"
+        src="images/lyghtning.jpg"></amp-img>
+        <amp-img layout="fill"
+        height="2926" 
+        width="1879"
+        media="(max-width: 649px)"
+        src="images/lyghtning-mobile.jpg"></amp-img>
+        <div class="lineup">
+            <h1>Event Schedule</h1>
+            <amp-img layout="intrinsic"
+            height="70" 
+            width="70"
+            src="images/amplogo.png"></amp-img>
+            <div class="center">
+                <h2>Stage One</h2>
+                    <table>
+                            <tr>
+                              <th>Band</th>
+                              <th>Time</th>
+                            </tr>
+                            <tr>
+                              <td>The Notorious A.M.P.</td>
+                              <td>11:00</td>
+                            </tr>
+                            <tr>
+                                <td>NirvAMPa</td>
+                                <td>12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Boilerplate Boys</td>
+                                <td>13:00</td>
+                            </tr>
+                            <tr>
+                                <td>Clicky Minaj</td>
+                                <td>14:00</td>
+                            </tr>
+                            <tr>
+                                <td>POST Malfo'med</td>
+                                <td>15:00</td>
+                            </tr>
+                            <tr>
+                                <td>The Loading Stones</td>
+                                <td>16:00</td>
+                            </tr>                   
+                          </table>
+            <h2>Stage Two</h2>
+            <table>
+                    <tr>
+                    <th>Band</th>
+                    <th>Time</th>
+                    </tr>
+                    <tr>
+                    <td>Super AMP</td>
+                    <td>11:00</td>
+                    </tr>
+                    <tr>
+                        <td>New Tab for Cutie</td>
+                        <td>12:00</td>
+                    </tr>
+                    <tr>
+                        <td>The Scrolling Phones</td>
+                        <td>13:00</td>
+                    </tr>
+                    <tr>
+                        <td>V0.1</td>
+                        <td>14:00</td>
+                    </tr>
+                    <tr>
+                        <td>The Flying Carp</td>
+                        <td>15:00</td>
+                    </tr>
+                    <tr>
+                        <td>Compiley Cyrus</td>
+                        <td>16:00</td>
+                    </tr>
+                </table>           
+            </div>
+        </div>     
+    </div>
+  </body>
+</html>

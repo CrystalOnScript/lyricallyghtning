@@ -1,0 +1,92 @@
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <meta name="theme-color" content="#3367D6">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+    <style amp-custom>
+        body {
+            background-color: #222325;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        h1 {
+            position: relative;
+            z-index: 1;
+        }
+        h2 {
+            color: whitesmoke;
+            font-size: 2em;
+            text-align: center;
+            margin: 10px;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .hero {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            height: 100vh;
+        } 
+        .hero amp-img {
+            margin-bottom: -20%;
+        }
+        .hero .title {
+            color: whitesmoke;
+            position: absolute; 
+            top: 10%; 
+            left: 0; 
+            width: 100%; 
+            font-size: 5em;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .headline {
+            background-color: #037D65;
+            padding: 20px;
+            text-align: center;
+
+        }
+       @media only screen and (max-width: 600px) {
+            .hero .title {
+                top: 30%; 
+                font-size: 2.5em;
+            }
+        }
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="canonical" href=".">
+    <title>Progressive Web AMP</title>
+  </head>
+  <body>
+    <div class="hero">
+        <amp-img layout="fill"
+        height="2932" 
+        width="3909"
+        media="(min-width: 650px)"
+        src="images/lyghtning.jpg"
+        amp-fx="parallax" data-parallax-factor="1.2"></amp-img>
+        <amp-img layout="fill"
+        height="2926" 
+        width="1879"
+        media="(max-width: 649px)"
+        src="images/lyghtning-mobile.jpg"
+        amp-fx="parallax" data-parallax-factor="1.2"></amp-img>
+        <div class="title"><h1>Network Offline</h1><br>
+            <p>Try again later!</p>
+        </div>
+    </div>  
+    <div class="center headline">
+        <h2>Mobile Music Magic</h2>
+        <br>
+        <a href="https://www.ampproject.org/"><amp-img layout="intrinsic"
+        height="70" 
+        width="70"
+        src="images/amplogo.png"></amp-img></a>
+    </div>
+  </body>
+</html>
